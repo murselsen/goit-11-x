@@ -39,8 +39,9 @@ form.addEventListener('submit', event => {
           console.log(img);
           gallery.innerHTML += `
           <li class="gallery-item">
-          
-          <img src="${img.webformatURL}" width="100%" alt="${img.tags}" />
+          <a href="${img.largeImageURL}">
+            <img src="${img.webformatURL}" width="360" height="200" alt="${img.tags}" />
+          </a>
           <div class="content">
             <div class="info">
               <h5 class="key">Likes</h5>
@@ -61,6 +62,12 @@ form.addEventListener('submit', event => {
           </div>
         </li>`;
         });
+
+        const lightBox = new SimpleLightbox('.some-element a', {
+          /* options */
+        });
+
+
       }
     })
     .catch(error => {
