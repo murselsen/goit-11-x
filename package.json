@@ -1,11 +1,13 @@
 {
-  "name": "vanilla-app-template",
+  "name": "goit-11-x",
   "private": true,
-  "version": "1.0.157",
+  "version": "1.0.152",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/goit-11-x/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
