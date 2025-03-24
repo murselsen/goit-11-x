@@ -63,11 +63,11 @@ form.addEventListener('submit', event => {
         </li>`;
         });
 
-        const lightBox = new SimpleLightbox('.some-element a', {
+        const lightBox = new SimpleLightbox('.gallery a', {
           /* options */
         });
 
-
+        lightBox.refresh();
       }
     })
     .catch(error => {

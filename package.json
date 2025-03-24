@@ -1,14 +1,14 @@
 {
   "name": "goit-11-x",
   "private": true,
-  "version": "1.0.152",
+  "version": "1.0.151",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/goit-11-x/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
+    "deploy": "gh-pages -d dist",
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
