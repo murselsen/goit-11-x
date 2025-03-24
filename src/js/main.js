@@ -39,7 +39,8 @@ form.addEventListener('submit', event => {
           console.log(img);
           gallery.innerHTML += `
           <li class="gallery-item">
-          <img src="${img.previewURL}" alt="${img.tags}" />
+          
+          <img src="${img.webformatURL}" width="100%" alt="${img.tags}" />
           <div class="content">
             <div class="info">
               <h5 class="key">Likes</h5>
@@ -55,7 +56,7 @@ form.addEventListener('submit', event => {
             </div>
             <div class="info">
               <h5 class="key">Downloads</h5>
-              <p class="value">${}</p>
+              <p class="value">${img.downloads}</p>
             </div>
           </div>
         </li>`;
