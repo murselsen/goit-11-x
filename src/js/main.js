@@ -8,10 +8,11 @@ form.addEventListener('submit', event => {
 
   axios.get('https://pixabay.com/api/', {
     params: {
-      key: "21250106-0015933422f1e636de5f184b8"i,
-      q : 
-    }
+      key: '21250106-0015933422f1e636de5f184b8',
+      q: searchValue,
+      image_type: 'photo',
+      orientation: 'horizontal',
+      safesearch: true,
+    },
   });
-
-
 });
