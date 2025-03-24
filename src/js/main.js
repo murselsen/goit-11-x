@@ -36,10 +36,10 @@ form.addEventListener('submit', event => {
         });
       } else {
         images.forEach(img => {
+          console.log(img);
           gallery.innerHTML += `
-
-          <!-- <li class="gallery-item">
-          <img src="https://picsum.photos/360/200" alt="Random image" />
+          <li class="gallery-item">
+          <img src="${img.previewURL}" alt="$" />
           <div class="content">
             <div class="info">
               <h5 class="key">Likes</h5>
@@ -59,7 +59,6 @@ form.addEventListener('submit', event => {
             </div>
           </div>
         </li>`;
-          
         });
       }
     })
