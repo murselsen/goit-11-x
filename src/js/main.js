@@ -39,23 +39,23 @@ form.addEventListener('submit', event => {
           console.log(img);
           gallery.innerHTML += `
           <li class="gallery-item">
-          <img src="${img.previewURL}" alt="$" />
+          <img src="${img.previewURL}" alt="${img.tags}" />
           <div class="content">
             <div class="info">
               <h5 class="key">Likes</h5>
-              <p class="value">1813</p>
+              <p class="value">${img.likes}</p>
             </div>
             <div class="info">
               <h5 class="key">Views</h5>
-              <p class="value">900290</p>
+              <p class="value">${img.views}</p>
             </div>
             <div class="info">
               <h5 class="key">Comments</h5>
-              <p class="value">229</p>
+              <p class="value">${img.comments}</p>
             </div>
             <div class="info">
               <h5 class="key">Downloads</h5>
-              <p class="value">610937</p>
+              <p class="value">${}</p>
             </div>
           </div>
         </li>`;
