@@ -1,7 +1,7 @@
 {
   "name": "vanilla-app-template",
   "private": true,
-  "version": "1.0.151",
+  "version": "1.0.152",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
